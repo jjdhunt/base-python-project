@@ -4,8 +4,8 @@ This repository serves as a good starting point for a python project. It uses a 
 
 ## Make the repository your own
 
-### Make a public fork of this repository
-Forking transfers the visibility of the original repository to the fork. This means your forked repo will be public.
+### How to make a *public* fork of this repository
+Forking transfers the visibility of the original repository to the fork. This means your forked repo will be public. You will not be able to make the fork private later.
 
 On this repo's GitHub page, click the `Fork` button:
 
@@ -17,7 +17,7 @@ Select the owner of the new repository, give it a name and description, copy jus
 
 After creating your fork of the repo, open VSCode and use the GUI in the Source Control tab to clone your repo to your local machine.
 
-### Making a private copy of this repository
+### How to make a *private* copy of this repository
 
 If you want to make private repository, you should download the repository as a single .zip file which will disconnect the code from any of the git history:
 
