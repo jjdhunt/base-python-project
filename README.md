@@ -44,11 +44,13 @@ If you are starting from a copy of this project (you downloaded a .zip from GitH
 
 With one exception, you only need to do the following steps one time during initial project setup (the one exception is discussed below).
 
+Open a terminal in VSCode (`Top Menu`->`Terminal`->`New Terminal`) in which to run the following commands.
+
 1. Create and activate a virtual environment:
    ```
-   python -m venv .venv
-   source .venv/bin/activate      # macOS/Linux
-   .venv\Scripts\activate         # Windows
+   python3 -m venv .venv
+   source .venv/bin/activate  # macOS/Linux
+   .venv\Scripts\activate     # Windows
    ```
 1. Install the project so you can import code from `src/`:
    ```
@@ -63,7 +65,13 @@ With one exception, you only need to do the following steps one time during init
    nbstripout --install
    ```
 
-You can also do these all in one line as >`python -m venv .venv; .venv\Scripts\activate; pip install -e .; pip install -e ".[dev]"; nbstripout --install` and go grab a coffee.
+You can also do these all in one line as
+
+(macOS/Linux)> `python3 -m venv .venv; source .venv/bin/activate; pip install -e .; pip install -e ".[dev]"; nbstripout --install`
+
+(Windows)> `python -m venv .venv; .venv\Scripts\activate; pip install -e .; pip install -e ".[dev]"; nbstripout --install`
+
+and go grab a coffee.
 
 The one exception to the one-time environment setup is that >`source .venv/bin/activate` should be run in *each new terminal* in which you run any commands or code related to the project. A common source of confusion is trying to `pip install some-package` in a terminal which has not first had the project's virtual environment activated. In this case it will either fail or install the package into your global python environment which your project will not be able to see.
 
