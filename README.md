@@ -3,6 +3,10 @@
 This repository serves as a good starting point for a python project. It uses a standard directory structure and has an example Jupyter notebook, script, python module, and tests to get your project going fast. It is highly recommended to use VSCode as your editor so some instructions below refer to it.
 
 ## Make the repository your own
+
+### Make a public fork of this repository
+Forking transfers the visibility of the original repository to the fork. This means your forked repo will be public.
+
 On this repo's GitHub page, click the `Fork` button:
 
 ![alt text](images/github-forking-1.png)
@@ -13,17 +17,22 @@ Select the owner of the new repository, give it a name and description, copy jus
 
 After creating your fork of the repo, open VSCode and use the GUI in the Source Control tab to clone your repo to your local machine.
 
----
-Alternatively, download the repository's code only as a single .zip file. This will disconnect the code from any of the git history:
+### Making a private copy of this repository
+
+If you want to make private repository, you should download the repository as a single .zip file which will disconnect the code from any of the git history:
 
 ![alt text](images/github-download-zip.png)
+
+Unzip the repository and rename the project directory as you like. Then follow the `Initialize git repository` instructions below.
 
 ## Setup
 
 Open the project directory in VSCode on your local machine. Open a new terminal in VSCode in which to execute the commands below.
 
 ### Initialize git repository
-If you are starting from a copy of this project (you downloaded a .zip from GitHub), rather than a fork of the repository, you should create a git repository with >`git init` or use GUI in VSCode source control tab. You can tell if your project has a git repository set up by looking for a directory called `.git` (may be hidden) in the top level directory of your project.
+If you are starting from a copy of this project (you downloaded a .zip from GitHub), rather than a fork of the repository, you should publish it to GitHub. Click the VSCode `Source Control tab` on the left panel, Click the `Publish to GitHub` button, give your repository a name (defaults to the project directory name but does not have to match), and select `Publish to GitHub private repository`.  
+
+![alt text](images/vscode-init-github-repo.png)
 
 ### Rename things in this starter project
 1. This starter project uses the package name `myPackage`. You should update this name everywhere it occurs to a custom name for your project/package. Rename it in `pyproject.toml`, `tests\test_example.py`, `scripts\script.py`, and `notebooks\sandbox.ipynb` (or just use VSCode's project-wide search and replace tab). Your new name should only have alphabetical characters and no spaces.
